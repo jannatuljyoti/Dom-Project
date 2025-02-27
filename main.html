@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Main Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="box border p-4 text-center rounded-sm">
-                    <img class="w-8 mx-auto" src="./images/money  1.png" alt="">
+                    <img class="w-8 mx-auto" src="./images/money 1.png" alt="">
                     <h3>Transfer Money</h3>
                 </div>
 
@@ -53,7 +53,7 @@
                     <h3>Pay Bill</h3>
                 </div>
 
-                <div class="box border p-4 text-center rounded-sm">
+                <div id="Transection-box" class="box border p-4 text-center rounded-sm">
                     <img class="w-8 mx-auto" src="./images/transaction 1.png" alt="">
                     <h3>Transactions</h3>
                 </div>
@@ -83,7 +83,7 @@
                                 <label class="fieldset-label">PIN</label>
                                 <input value="1234" id="pin" type="text" class="input" placeholder="type your pin" required/>
                                 <div><a class="link link-hover">Forgot password?</a></div>
-                                <button id="add-money" type="submit" id="login-btn" class="btn btn-neutral mt-4">Add Money</button>
+                                <button id="add-money-btn" type="submit" id="login-btn" class="btn btn-neutral mt-4">Add Money</button>
                               </fieldset>
                         </div>
                       </div>
@@ -107,12 +107,27 @@
                 <button id="cashOut-btn" type="submit" id="login-btn" class="btn btn-neutral mt-4">Cashout</button>
               </fieldset>
         </section>
+
+        <section id="transection-history">
+            <h1 class="text-3xl font-bold text-red-400 text-center p-4">Transection History</h1>
+
+        <div id="transection-container">
+
+        </div>    
+
+        </section>
     </header>    
 
     </section>
 
-    <script src="./script/addMoney.js"></script>
+    <!-- <script src="./script/addMoney.js"></script>
     <script src="./script/toggle.js"></script>
-    <script src="./script/cashOut.js"></script>
+    <script src="./script/cashOut.js"></script> -->
+
+    <script src="./script/addmoneyy.js"></script>
+    <script src="./utilities/utilities.js"></script>
+    <script src="./utilities/toggle.js"></script>
+    <script src="./utilities/cashout.js"></script>
+    <script src="./utilities/transection.js"></script>
 </body>
 </html>
